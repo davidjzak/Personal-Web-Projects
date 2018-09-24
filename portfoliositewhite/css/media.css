@@ -1,0 +1,62 @@
+@media (max-width: 576px){
+
+    #nmap{
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    
+    
+    #nmap li {
+        display: inline-block;
+        width: 49vw;
+        box-sizing: border-box;
+        margin: 4vw 0vw;
+    
+    }
+    
+    
+    #projects {
+    width: 100vw;
+    }
+    
+    
+    .projects1 {
+    
+    width: 80vw;
+    height: 80vw;
+    }
+    .projects1 img{
+    width: 70vw;
+    height: 70vw;
+    }
+    
+     .bhov {
+            
+            width: 70vw;
+            height: 70vw;
+        }
+    
+    
+    .rightt{
+    display: none;
+    }
+    
+    #bdlogo{
+    width:15vw;
+    }
+    .leftt #onep, #twop, #threep{
+    font-size: 8vw;
+    
+    }
+    
+    
+    
+    .leftt{
+        width: 100%;
+    
+    }
+    
+    #tdlogo{
+        height: 6.5vw;
+    }
+    }

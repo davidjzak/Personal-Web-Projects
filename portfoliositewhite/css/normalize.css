@@ -1,0 +1,43 @@
+#nmap{
+
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    
+}
+#nmap ul{
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+    margin: auto;
+
+}
+#nmap li{
+
+    margin: 5vw;
+    color: red;
+    display: inline;
+   
+}
+#nmap ul li a {
+   border-color:blue;
+border: 0px 2px;
+padding: 10px;
+text-decoration: none;
+background-image: url('house1.png');
+font: bold 16px Consolas, Monaco, monospace;
+
+}
+
+#nmap ul li a:hover {
+border-color:blue;
+color: purple;
+border: 0px 2px;
+background-color:rgb(51, 204, 204);
+
+}
+
+*{
+margin: 0;
+padding: 0;
+}

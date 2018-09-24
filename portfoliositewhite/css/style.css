@@ -1,0 +1,279 @@
+   
+        *{  margin: 0;
+            padding: 0;
+        }
+        body{    
+		position:absolute;
+		width: 100vw;
+        background-color: #F3FFFC;
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        overflow-x:hidden;
+        }
+        
+		
+		
+        #nmap{
+            box-sizing: border-box;
+            text-align: center;
+            color:#2374AB;
+            padding: 10px;
+            background-color:#8FE3E3;
+            
+            
+        }
+        #nmap ul{
+            padding: 0;
+            display: inline-block;
+            list-style-type: none;
+            margin: auto;
+
+        }
+        #nmap li{
+            
+            margin: 10vw 5vw;
+            color: red;
+            display: inline;
+           
+        }
+       #nmap ul li a {
+           border-color:blue;
+           color: #2374AB;
+        border: 0px 2px;
+        padding: 10px;
+        text-decoration: none;
+        font: bold 16px'Amaranth', sans-serif, monospace;
+        
+        
+       }
+
+       #nmap ul li a:hover {
+        border-color:blue;
+        color: #D6FFF6;
+        border: 0px 2px;
+        background-color:#2374AB;
+        
+       }
+
+
+       #onep { 
+        font: bold 4vw 'Amaranth', sans-serif;
+        border-right: .1em solid transparent;
+        opacity: 0;
+        width: 3ch;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: typing 1s steps(3, end) forwards,
+                   blink-caret .1s step-end 3 alternate;
+                 
+    }
+    
+    #twop { 
+        font:bold 4vw 'Amaranth', sans-serif, monospace;
+        border-right: .1em solid transparent; 
+       opacity: 0;
+        width: 14ch;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;   
+        animation: typing 2s steps(13, end) forwards,
+                   blink-caret .155s step-end 13 alternate;
+                   animation-delay: 1s;
+    }
+   
+      #threep { 
+        font: bold 4vw 'Amaranth', sans-serif;
+        border-right: .1em solid transparent;
+        opacity: 0;
+        width: 13ch;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: typing 2s steps(13, end) forwards,
+                   blink-caret .15s step-end 13 alternate;
+                   animation-delay: 3s;
+    }
+
+
+
+
+       
+
+     #tdlogo {
+        height: 3.2vw;
+    }
+
+    .leftt h1, .leftt h4{
+        margin: 0px;
+        display: inline-block;
+        color: #231651;
+        
+    }
+    .leftt h4 {
+        line-height: 35px !important;
+    }
+
+
+    .contact{
+        height: 37px;
+        width: 135px;
+        background-color: #D6FFF6;
+        font-family: Consolas, Monaco, monospace;
+        font-size: 1em;
+        color: #231651;
+        border: 2px solid #FF8484;
+        border-radius: 10px;
+        
+    }
+
+   a{text-decoration:none;}
+    
+    .contact:hover{
+color: #FF8484;
+background-color:#8FE3E3;
+
+    }
+    
+    .leftt{
+       float: left;
+        margin-left: 20px;
+        overflow: hidden;
+        line-height: 40px !important;
+        margin-right: 8vh;
+       
+    }
+    .greyt{
+
+        color:  #8d8d8d;
+    }
+
+    #top {
+        margin-left: 3vw;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 80vh;
+    box-sizing: border-box;
+       
+    }
+
+    .projects1{
+    color: #231651;
+        z-index: 1;
+      position: relative;
+    font-family: "Garamond Header";
+    float: left;
+    width:30vw;
+    margin: 9.5vw;
+    margin-top: 1vw;
+    background-color: #D6FFF6;
+    background-color:rgba(0,0,0,0);
+    height: 35vw;
+    }
+
+
+    .bhov {
+        
+        
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .bhov p {
+        opacity: 0;
+        text-align: center;
+       padding-top: 12vw;
+        
+    }
+
+
+    .bhov:hover {
+        background-color: rgba(0, 0, 0, .6);
+    }
+   
+
+    .bhov:hover p {
+    opacity: 1;
+    color: white;
+            }
+
+    .bhov:hover a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .projects1 img {
+        position: absolute;
+    z-index: -1;
+        height: 25vw;
+        width: 25vw;
+    }
+   
+    #bdlogo {
+width: 35vw;
+            
+    }
+
+    .leftt, .rightt{
+      
+        width: 48%;
+       
+        display: inline-block;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+
+    }
+
+    .skillh{
+        font-family: 'Amaranth', sans-serif;
+
+        color: #231651;      
+    }
+          
+    
+
+    #contactp {
+        box-sizing: border-box;
+        width: 100vw;
+        font-family: 'Amaranth', sans-serif;
+        font-size: 1.7em;
+
+        padding: 80px;
+        width: 100vw;
+        color:#D6FFF6;
+        box-shadow: #8d8d8d;
+        background-color:#FF8484;
+        
+    }
+
+   
+    #projects{
+       
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        color: white;
+        background-color:#D6FFF6;
+        background-image: linear-gradient(360deg, #8FE3E3, #B4ECEC);
+        margin-top: 60px;
+        display:block;
+        overflow: hidden;
+        
+    }
+    #projects .contact{
+        display: block;
+        margin: auto;
+    }
+
+    #projects h1 {
+            color:  #231651;
+          font-family: 'Amaranth', sans-serif;
+    }
+
+   
+
+   

@@ -1,0 +1,55 @@
+ /* animation type */
+ @keyframes typing { 0% { width: 0; opacity: 1; } 100%{ opacity: 1;}}
+ @keyframes blink-caret {
+from, to { border-color: orange }
+50% { border-color: transparent; }
+}
+
+
+ @keyframes rubberBand {
+    0% {
+     -webkit-transform: scale(1);
+     -ms-transform: scale(1);
+     transform: scale(1);
+    }
+    
+    30% {
+     -webkit-transform: scaleX(1.35) scaleY(0.75);
+     -ms-transform: scaleX(1.35) scaleY(0.75);
+     transform: scaleX(1.35) scaleY(0.75);
+    }
+    
+    40% {
+     -webkit-transform: scaleX(0.75) scaleY(1.4);
+     -ms-transform: scaleX(0.75) scaleY(1.4);
+     transform: scaleX(0.75) scaleY(1.4);
+    }
+    
+    60% {
+     -webkit-transform: scaleX(1.15) scaleY(0.85);
+     -ms-transform: scaleX(1.15) scaleY(0.85);
+     transform: scaleX(1.15) scaleY(0.85);
+    }
+    
+    100% {
+     -webkit-transform: scale(1);
+     -ms-transform: scale(1);
+     transform: scale(1);
+    }
+    }
+
+span:hover { 
+ color: red;
+ transition: all 0.25s ease-out;
+ }
+ 
+ span{
+     display: inline-block;
+ }
+
+
+.rubber { animation: rubberBand;
+ animation-duration: 1s;}
+
+
+
