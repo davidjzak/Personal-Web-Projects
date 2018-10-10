@@ -1,0 +1,195 @@
+<html>
+<head>
+<style>
+
+*{
+margin: 0;
+paddng: 0;
+}
+
+body{
+
+
+background-image:linear-gradient(45deg,#D5FFF3,#E0FFF6, #E8FFF8);
+}
+
+table{
+overflow: hidden;
+box-sizing: border-box;
+border: black 2px;
+margin: auto;
+}
+td{
+text-align: center;
+height: 11.6vw;
+width: 11.6vw;
+}
+
+h1{
+color: purple;
+}
+
+.xvalue{
+color: red;
+}
+
+.ovalue {
+color:blue;
+}
+
+</style>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script>
+turn = 0;
+ board = [ 0,0,0,0,0,0,0, 0];
+ gameover = false;
+ 
+ 
+  $(document).ready(function(){
+  $("td").click(function(){
+   clearerrors();
+  ++turn;
+   boardid = (this).id;
+  
+  if (turn % 2 != 0){
+  console.log(" x turn ");
+  other("O turn");
+		  if($( this ).hasClass("click")){
+		  console.log("contains");
+		  message("this space is taken");
+		  return 0;
+		  }else
+		  {
+		  board[boardid - 1] = 1;
+		  
+		  var xval = document.createElement("h1");
+		  $(xval).addClass("xvalue");
+		  xval.innerHTML = "X";
+		   this.className = "click";
+		  $(this).append(xval);  
+		  checkWinner();
+		  return 0;
+		  }
+  
+  } else if(turn % 2 == 0){
+  console.log(" O turn");
+ other("X turn");
+ 
+		  if($( this ).hasClass( "click" )){
+		  message("this space is taken");
+		  console.log("contains");
+		
+			return 0;
+		  }
+		  else{
+		   board[boardid - 1] = 2;
+		  var xval =document.createElement("h1");
+		  $(xval).addClass("ovalue");
+		  xval.innerHTML = "O";
+		  $(this).append(xval);
+		  this.className = "click";
+		  checkWinner();
+		  return 0;}
+  }
+ 
+  
+  })
+   this.className = "click";
+  return;
+  });
+
+
+  function easycomputer(){
+  
+  num = parseInt((math.random() * 10));
+  
+  // random num generator
+  if (!($( "board[num - 1]" ).hasClass("click"))){ // check id
+   board[boardid - 1] = 2;
+		  var xval =document.createElement("h1");
+		  $(xval).addClass("ovalue");
+		  xval.innerHTML = "O";
+		  $(this).append(xval);
+		  this.className = "click";
+		  checkWinner();
+		  return 0;
+  
+  }
+  }
+  
+
+function checkWinner(){ 
+console.log("enter check winner");
+console.log(board[1]);
+if ((board[0] == 1 && board[1] == 1  && board[2] == 1)  || (board[3] == 1 && board[4] == 1  && board[5] == 1)  || 
+(board[6] == 1 && board[7] == 1  && board[8] == 1)  || (board[0] == 1 && board[3] == 1  && board[6] == 1)  ||
+(board[1] == 1 && board[4] == 1  && board[7] == 1)  || (board[2] == 1 && board[5] == 1  && board[8] == 1)  ||(board[8] == 1 && board[4] == 1  && board[0] == 1)  ||
+(board[6] == 1 && board[4] == 1  && board[2] == 1)){ 
+ console.log("win");
+other("X WIIIIIIIIIIIIIIIIIIIIIIIIIIIINNNNS");
+gameover = true;
+
+}
+if ((board[0] == 2 && board[1] == 2  && board[2] == 2)  || (board[3] == 2 && board[4] == 2  && board[5] == 2)  || 
+(board[6] == 2 && board[7] == 2  && board[8] == 2)  || (board[0] == 2 && board[3] == 2  && board[6] == 2)  ||
+(board[1] == 2 && board[4] == 2  && board[7] == 2)  || (board[2] == 2 && board[5] == 2  && board[8] == 2)  ||(board[8] == 2 && board[4] == 2  && board[0] == 2)  ||
+(board[6] == 2 && board[4] == 2  && board[2] == 2)){ 
+ console.log("win2");
+other(" O win");
+
+gameover = true;
+}}
+
+
+
+function message( str ){
+
+let e = document.getElementById("errors");
+let m = document.createElement("h2");
+let t = document.createTextNode(str);
+m.appendChild(t);
+e.appendChild(m);
+};
+
+function other( str ){
+
+let e = document.getElementById("other");
+e.innerHTML = "";
+let m = document.createElement("h2");
+let t = document.createTextNode(str);
+m.appendChild(t);
+e.appendChild(m);
+};
+
+
+
+
+function clearerrors(){
+
+let e = document.getElementById("errors");
+e.innerHTML = "";
+};
+
+
+
+    
+</script>
+
+</head>
+
+
+<body>
+
+<table border="2";>
+<tr><td id="1"></td><td id="2"></td><td id="3"></td></tr>
+<tr><td id="4"></td><td id="5"></td><td id="6"></td></tr>
+<tr><td id="7"></td><td id="8"></td><td id="9"></td></tr>
+</table>
+
+<div id="errors"></div>
+<div id="other"></div>
+
+</body>
+
+
+</html>
